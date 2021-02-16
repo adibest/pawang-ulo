@@ -1,0 +1,12 @@
+Ini adalah kalimat pertama
+Ini adalah kalimat kedua
+Ini adalah kalimat ketiga
+Ini adalah kalimat pertama
+Ini adalah kalimat kedua
+Ini adalah kalimat ketiga
+Tambah kalimat pertama
+Tambah kalimat kedua
+Tambah kalimat ketiga
+Tambah kalimat pertama
+Tambah kalimat kedua
+Tambah kalimat ketiga

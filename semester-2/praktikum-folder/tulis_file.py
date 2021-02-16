@@ -1,0 +1,5 @@
+f=open("file.txt","a")
+f.write("Ini adalah kalimat pertama\n")
+f.write("Ini adalah kalimat kedua\n")
+f.write("Ini adalah kalimat ketiga\n")
+f.close()
