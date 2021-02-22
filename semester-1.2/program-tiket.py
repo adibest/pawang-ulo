@@ -2,15 +2,15 @@ def main_menu():
     print('')
     n = raw_input('Masukkan Nama Anda: ')
     print('Nama Pemesan: ',n)
-    print("Masukkan Pilihan
-            1. Lanjutkan
-            2. Kembali")
+    print("Masukkan Pilihan")
+    print("1. Lanjutkan")
+    print("2. Kembali")
     print('')
 
 def second_menu():
-    print("'Masukkan Pilihan
-            1. Lanjutkan
-            2. Kembali'")
+    print("Masukkan Pilihan")
+    print("1. Lanjutkan")
+    print("2. Kembali")
     print('')
 
 class tiket_on_stage():
@@ -98,13 +98,13 @@ def pilihan():
     b = input('Masukkan Pilihan: ')
     if b == 1:
     
-    pil = 1
+    pil == 1
     tos = tiket_on_stage()
     while pil !=4:
-        print("'Pilih Tiket
-                1. Reguler
-                2. Medium
-                3. Premium'")
+        print("Pilih Tiket")
+        print("1. Reguler")
+        print("2. Medium")
+        print("3. Premium")
             pil = int(input('Masukkan pilihan anda: '))
             print
             if pil == 1:
@@ -125,13 +125,13 @@ def pilihan():
                 tos.premium(b)
                 pil(4)
 
-    pil = 0
+    pil == 0
     to = tiket_online()
     while pil !=4:
-        print("'Pilih Tiket
-                1. Reguler
-                2. Medium
-                3. Premium'")
+        print("Pilih Tiket")
+        print("1. Reguler")
+        print("2. Medium")
+        print("3. Premium")
             pil = int(input('Masukkan pilihan anda: '))
             print
             if pil == 1:
