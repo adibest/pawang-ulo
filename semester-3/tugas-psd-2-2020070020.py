@@ -1,3 +1,4 @@
+# PRAKTIKUM
 # Kegiatan 1: Membuat Class dan Objek
 class Mobil:
     def __init__(self):
@@ -69,3 +70,79 @@ class Orang:
 
 org = Orang()
 org.katakanSalam()
+
+# Latihan 2
+# 1. Membuat class PersegiPanjang dengan dua method
+class PersegiPanjang:
+    def __init__(self,panjang,lebar):
+        self.panjang = panjang
+        self.lebar = lebar
+
+    def luas(self):
+        print (self.panjang*self.lebar)
+        #print ("Luas persegi panjang dengan dimensi " + str(self.panjang) + "x" + str(self.lebar) + " sama dengan " + self.panjang*self.lebar + "satuan luas")
+
+    def keliling(self):
+        print (2*(self.panjang+self.lebar))
+        #print ("Keliling persegi panjang dengan dimensi " + str(self.panjang) + "x" + str(self.lebar) + " sama dengan " + (2*(self.panjang+self.lebar)) + "satuan panjang")
+
+# Kegiatan 3: Variable class dan objek (instance)
+class Orang:
+    # variable class, untuk menghitung jumlah orang
+    total = 0
+    def __init__(self,nama):
+        # inisiasi data, data yang dibuat pada self merupakan variable objek
+        self.nama = nama
+        # ketika ada orang yang dibuat, tambahkan total orang
+        Orang.total += 1
+    def __del__(self):
+        # kurangi total orang jika obyek dihapus
+        Orang.total -= 1
+    def katakanHalo(self):
+        print ("Halo, nama saya", self.nama, " apa kabar?")
+    def total_populasi(cls):
+        print ('Total Orang adalah ', cls.total)
+        method class
+    total_populasi = classmethod(total_populasi)
+
+org = Orang('Budi')
+org.katakanHalo()
+Orang.total_populasi()
+
+org2 = Orang('Andi')
+org2.katakanHalo()
+Orang.total_populasi()
+print ('objek dihapus')
+
+del org
+del org2
+Orang.total_populasi()
+
+# TUGAS
+# 1. Class Hewan
+class Hewan():
+    def __init__(self,nama,jumlah_kaki,makanan,type_hewan):
+        self.nama = nama
+        self.jumlah_kaki = jumlah_kaki
+        self.makanan = makanan
+        self.type_hewan = type_hewan
+        print ('Nama Hewan : ', self.nama)
+        print ('Jumlah Kaki : ', self.jumlah_kaki)
+        print ('Makanan : ', self.makanan)
+        print ('Type Hewan : ', self.type_hewan)
+
+# 2. Class Mahasiswa
+class Mahasiswa():
+    def __init__(self,nama,nim,alamat,semester):
+        self.nama = nama
+        self.nim = nim
+        self.alamat = alamat
+        self.semester = semester
+    def tampilkanNama(self):
+        print ('Nama :', self.nama)
+    def tampilkanNim(self):
+        print ('Nim :', self.nim)
+    def tampilkanAlamat(self):
+        print ('Alamat :', self.alamat)
+    def tampilkanSemester(self):
+        print ('Semester :', self.semester)
