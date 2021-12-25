@@ -30,12 +30,12 @@ def f_search(a, x, n) :
 		
 	return -1
 
-#print ("Masukkan list:")
-#a = [int(b) for b in input().split()]
+print ("Masukkan list:")
+a = [int(b) for b in input().split()]
 
 list.sort(a)
 
-#print ("Data yang telah diurutkan", a)
+print ("Data yang telah diurutkan", a)
 x = eval(input("Masukkan data yang dicari:"))
 n = len(a)
 pos = f_search (a, x, n)
